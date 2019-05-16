@@ -1,0 +1,103 @@
+div.grid-container-header-stats {
+  display: grid;
+  grid-template-columns: 40px repeat(7, 1fr);
+  grid-template-rows: 20px;
+  grid-template-areas: "title title title title title tjj tdg tpts";
+  background-color: #7f7f7f;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+
+div.item-h-title {
+  grid-area: title;
+  color: #fff;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+div.item-h-tjj {
+  grid-area: tjj;
+}
+
+div.item-h-tdg {
+  grid-area: tdg;
+}
+
+div.item-h-tpts {
+  grid-area: tpts;
+}
+
+div.small-txt-header {
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+div.grid-container-stats {
+  display: grid;
+  grid-template-columns: 40px repeat(7, 1fr);
+  grid-template-rows: 70px;
+  grid-template-areas: "po img-team team team team jj dg pts";
+  background-color: #75ae4b;
+}
+
+div.item-head {
+  grid-area: head;
+}
+
+div.item-djj {
+  grid-area: djj;
+}
+
+div.item-ddg {
+  grid-area: ddg;
+}
+
+div.item-po {
+  grid-area: po;
+  color: #fff;
+  font-size: 32px;
+  align-self: center;
+  text-align: center;
+}
+
+div.item-img-team {
+  grid-area: img-team;
+  background-image: url("../../assets/venados.png");
+  height: 60px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  justify-content: center;
+}
+
+div.item-team {
+  grid-area: team;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  align-self: center;
+}
+
+div.item-jj {
+  grid-area: jj;
+}
+
+div.item-dg {
+  grid-area: dg;
+}
+
+div.item-pts {
+  grid-area: pts;
+}
+
+div.table-score {
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}

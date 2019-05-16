@@ -1,0 +1,11 @@
+.centerContainer {
+  width: 100%;
+}
+
+.imagen-logo-veneados{
+  background-image: url('../../assets/venados.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 188px;
+}

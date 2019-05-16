@@ -1,0 +1,66 @@
+.header-cont{
+    background-color: #7F7F7F;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.header-txt{
+    margin: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 110px 35px 25px;
+    background-color:#75AE4B;
+}
+div.item:nth-of-type(1){
+    text-align: center;
+    align-self: center;
+}
+.color-icon{
+    color: #fff;
+    font-size: 32px;
+}
+p.number-day{
+    color: #fff;
+    font-size: 26px;
+    margin: 0px;
+}
+div.item-cont-logo{
+    align-self: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+div.item-result:nth-of-type(3){
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+div.item-result p {
+    font-size: 48px;
+    text-align: center;
+    color: #fff
+}
+div.item-name-day{
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    align-self: baseline;
+}
+div.item-name-equi{
+    align-self: center;
+    text-align: center;
+    color: #fff
+}
+div.logo-team{
+    background-image: url('../../assets/venados.png');
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;   
+}

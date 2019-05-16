@@ -1,0 +1,80 @@
+.main-container-modal {
+  height: 100vh;
+}
+
+.container-modal-ft {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-rows: 1fr 4fr 1fr 1fr;
+  height: 40vh;
+  padding: 0px !important;
+  background-color: #304f2b;
+}
+
+.item-ft {
+  color: #fff;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.item-ft:first-child {
+  align-self: flex-end;
+  color: #fff;
+  text-align: center;
+}
+
+.item-ft:nth-of-type(2) {
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  align-self: center;
+}
+
+.item-ft:nth-of-type(3) {
+  grid-column: 1;
+  grid-row: 3 / span 1;
+  height: 100%;
+}
+
+.item-ft:nth-of-type(4) {
+  grid-column: 1;
+  grid-row: 4 / span 1;
+  height: 100%;
+}
+
+.cover-player{
+  background-image: url(/static/media/vela-1.7af2dd31.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 145px;
+  width: 145px;
+  margin: 0% auto;
+  border-radius: 100%;
+}
+
+.container-modal-dj {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 40vh;
+  padding: 0px !important;
+}
+
+.item-dj {
+  align-self: center;
+}
+.item-dj > p:nth-of-type(1) {
+  margin: 0px;
+  text-align: center;
+}
+
+.item-dj > p:nth-of-type(2) {
+  margin: 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.item-dj:last-child {
+  align-self: flex-end;
+  margin-bottom: 16px;
+}

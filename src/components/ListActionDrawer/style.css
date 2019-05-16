@@ -1,0 +1,12 @@
+section.container-list {
+    flex: 1;
+    background-color: #FAFAFA;
+}
+
+.setStyleHref {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  width: 100%;
+}
+  
