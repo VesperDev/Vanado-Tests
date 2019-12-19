@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from './components/Layout/Layout'
+import LayoutRouter from './components/LayoutRouter/LayoutRouter'
 
 function App() {
   return (
-    <Layout />
+    <LayoutRouter />
   );
 }
 

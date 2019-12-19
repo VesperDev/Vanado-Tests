@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import PropTypes from 'prop-types'
@@ -30,39 +31,63 @@ const styles = theme => ({
     }
 });
 
-export class Layout extends Component {
+export class LayoutRouter extends Component {
 
     state = {
-        mobileOpen: false
+        mobileOpen: false,
+        view: 'Partidos'
+    }
+
+    componentDidMount() {
+        let view = ''
+        let route = window.location.href.split('/')[3]
+        
+        if (route === 'estadisticas') {
+            view = 'Estadísticas'
+        } else if (route === 'jugadores') {
+            view = 'Jugadores'
+        }else{
+            view = 'Partidos'
+        }
+
+        this.setState({ view: view })
     }
 
     handleDrawerToggle = (e) => {
         this.setState(state => ({
-            mobileOpen: !state.mobileOpen
+            mobileOpen: !state.mobileOpen,
+            ...e
+        }));
+    };
+
+    openDrawer = () => {
+        this.setState(state => ({
+            mobileOpen: true
         }));
     };
 
     render() {
 
         const { classes } = this.props;
+        const { view } = this.state
 
         return (
             <Router>
                 <div className={classes.root}>
                     <AppBar position="static" color="default">
                         <Toolbar>
-                            <IconButton className={classes.menuButton} onClick={this.handleDrawerToggle} color="inherit" aria-label="Menu">
+                            <IconButton className={classes.menuButton} onClick={() => this.openDrawer()} color="inherit" aria-label="Menu">
                                 <MenuIcon />
                             </IconButton>
                             <Typography variant="h6" color="inherit" className={classes.grow}>
-                                Venados
+                                {view}
                             </Typography>
                         </Toolbar>
                     </AppBar>
                     <nav>
-                        <Drawer open={this.state.mobileOpen} onClose={this.handleDrawerToggle}>
+                        <Drawer open={this.state.mobileOpen} onClose={() => this.handleDrawerToggle()}>
                             <HeaderDrawer />
-                            <ListActionDrawer onCloseDrawer={this.handleDrawerToggle} />
+                            <ListActionDrawer onCloseDrawer={this.handleDrawerToggle.bind(this)} />
                         </Drawer>
                     </nav>
                     <main>
@@ -76,8 +101,8 @@ export class Layout extends Component {
     }
 }
 
-Layout.propTypes = {
+LayoutRouter.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Layout);
+export default withStyles(styles)(LayoutRouter);
