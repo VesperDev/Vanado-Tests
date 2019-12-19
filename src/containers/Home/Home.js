@@ -14,8 +14,8 @@ export class Home extends Component {
             {
                 month: 'Abril',
                 results: [
-                    { day: '24', nameday: 'MIE', team: 'Venados F.C', teamtwo: 'Atl. San Luis', score: '1-1' },
-                    { day: '27', nameday: 'SAB', team: 'Venados F.C', teamtwo: 'Atl. San Luis', score: '3-1' }
+                    { day: '24', nameday: 'MAR', team: 'Venados F.C', teamtwo: 'Atl. San Luis', score: '1-1' },
+                    { day: '27', nameday: 'VIR', team: 'Venados F.C', teamtwo: 'Atl. San Luis', score: '3-1' }
                 ]
             },
             {

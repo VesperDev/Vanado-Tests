@@ -46,7 +46,10 @@ export class Jugadores extends Component {
                 resultJugadores={
                     <ResultJugadores
                         handleOpenModal={this.handleOpenModalaVatar.bind(this)}
-                        players={players} />} />
+                        players={players}
+                    />
+                }
+            />
         )
     }
 }

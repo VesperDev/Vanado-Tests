@@ -55,7 +55,7 @@ export class Layout extends Component {
                                 <MenuIcon />
                             </IconButton>
                             <Typography variant="h6" color="inherit" className={classes.grow}>
-                                Venados Test
+                                Venados
                             </Typography>
                         </Toolbar>
                     </AppBar>

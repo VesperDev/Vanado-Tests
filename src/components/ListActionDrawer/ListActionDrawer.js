@@ -37,7 +37,7 @@ export class ListActionDrawer extends PureComponent {
                             <ListItemIcon>
                                 <HomeIcon />
                             </ListItemIcon>
-                            <ListItemText onClick={() => onCloseDrawer({ view: "Venados Test" })} primary={<Link className="setStyleHref" to="/">Home</Link>} />
+                            <ListItemText onClick={() => onCloseDrawer({ view: "Venados" })} primary={<Link className="setStyleHref" to="/">Home</Link>} />
                         </ListItem>
                         <ListItem button>
                             <ListItemIcon>
